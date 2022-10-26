@@ -7,6 +7,12 @@
 
 ## Overview
 
+Unity2021.3 のMacでLocalTestが使えるように変更したもの
+変更点
+- サーバーのビルドセッティングだと.appではなくUnix実行ファイルが生成されるため.appで起動するように鳴っていた部分をUnix実行ファイルでも実行可能に
+
+M1Macではビルド時にx64を指定しないとWebSocket周りでエラーが出る
+
 Amazon GameLift provides tools for preparing your multiplayer games and custom game servers to run on the GameLift
 service. The GameLift SDKs contain libraries needed to enable game clients and servers to communicate with the GameLift
 service. The Amazon GameLift Plug-in for Unity makes it easier to access GameLift resources and integrate GameLift into
